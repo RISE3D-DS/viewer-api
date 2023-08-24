@@ -1,7 +1,5 @@
 # Changelog
 
-All notable changes to `viewer-api` will be documented in this file
-
-## 1.0.0 - 201X-XX-XX
+## 1.0.0 - 2023-08-24
 
 - initial release
