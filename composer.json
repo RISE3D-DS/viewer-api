@@ -1,0 +1,51 @@
+{
+    "name": "rise3d/viewer-api",
+    "description": "It's a viewer API provider",
+    "keywords": [
+        "rise3d",
+        "viewer-api"
+    ],
+    "homepage": "https://github.com/rise3d/viewer-api",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rise3D",
+            "email": "info@rise3d.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0",
+        "illuminate/http": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rise3d\\ViewerApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rise3d\\ViewerApi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rise3d\\ViewerApi\\ViewerApiServiceProvider"
+            ],
+            "aliases": {
+                "ViewerApi": "Rise3d\\ViewerApi\\ViewerApiFacade"
+            }
+        }
+    }
+}
